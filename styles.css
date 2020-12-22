@@ -1,0 +1,2947 @@
+*,
+html,
+body,
+td {
+  font-family: arial, helvetica, sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #2d2d2b;
+  color: #939393;
+}
+
+.NoSelect {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+#liveFeedHeader {
+  width: 700px;
+  background-color: #000000;
+  padding: 10px;
+}
+
+.watchLiveLink,
+.watchLiveLink:hover,
+.watchLiveLink:active,
+.watchLiveLink:visited {
+  font-size: 16px;
+  font-weight: bold;
+  color: #ffa800;
+}
+
+.teamNameLink,
+.teamNameLink:hover,
+.teamNameLink:active,
+.teamNameLink:visited {
+  text-decoration: none;
+}
+
+#userInfo {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: auto;
+  background-color: black;
+  padding: 4px 10px;
+  font-size: 11px;
+  color: #ffffff;
+  line-height: 16px;
+  text-align: left;
+}
+
+.menu {
+  list-style-type: none;
+  padding: 0px;
+  margin: 0px;
+  border: 0;
+  margin-left: 73px;
+}
+.menu li {
+  float: left;
+  padding-left: 6px;
+  padding-right: 6px;
+  padding-top: 21px;
+  margin-right: 8px;
+  color: #cccccc;
+  font-size: 14px;
+  color: #b8b6b4;
+  text-transform: uppercase;
+}
+
+.menu a,
+.menu a:active,
+.menu a:visited,
+.menu a:link,
+.menu a:focus {
+  color: #959595;
+  text-decoration: none;
+}
+
+a,
+a:active,
+a:visited,
+a:focus {
+  color: #959595;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #ffffff;
+  text-decoration: none;
+  -webkit-transition: color 0.15s ease-in-out;
+  -moz-transition: color 0.15s ease-in-out;
+  -o-transition: color 0.15s ease-in-out;
+  transition: color 0.15s ease-in-out;
+}
+
+a.intmenu,
+a.intmenu:link,
+a.intmenu:visited,
+a.intmenu:active,
+a.intmenu:hover {
+  display: inline-block;
+  padding: 21px 6px 0px 6px;
+  margin-right: 8px;
+  font-size: 14px;
+  color: #b8b6b4;
+  text-transform: uppercase;
+}
+a.intmenu:hover {
+  color: #ffffff;
+}
+
+#centerContent {
+  width: 958px;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.centered {
+  text-align: center;
+}
+
+form {
+  margin: 0;
+  padding: 0;
+}
+
+.perf_timing_area {
+  position: relative;
+  width: 936px;
+  max-width: 100%;
+  margin: 0px auto 48px auto;
+  text-align: center;
+  color: #b0aeac;
+}
+
+.perf_timing_link {
+}
+
+.perf_timing_data {
+  text-align: left;
+  background-color: #000000;
+  padding: 8px;
+}
+
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+body {
+  background-color: #000;
+}
+@font-face {
+  font-family: "Radiance";
+  src: url("https://cdn.cloudflare.steamstatic.com/apps/dota2/fonts/radiance.eot");
+  src: url("https://cdn.cloudflare.steamstatic.com/apps/dota2/fonts/radiance.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://cdn.cloudflare.steamstatic.com/apps/dota2/fonts/radiance.woff")
+      format("woff"),
+    url("https://cdn.cloudflare.steamstatic.com/apps/dota2/fonts/radiance.ttf")
+      format("truetype"),
+    url("https://cdn.cloudflare.steamstatic.com/apps/dota2/fonts/radiance.svg#ywftsvg")
+      format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Radiance-SemiBold";
+  src: url("https://cdn.cloudflare.steamstatic.com/apps/dota2/fonts/radiance-semibold.eot");
+  src: url("https://cdn.cloudflare.steamstatic.com/apps/dota2/fonts/radiance-semibold.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://cdn.cloudflare.steamstatic.com/apps/dota2/fonts/radiance-semibold.woff")
+      format("woff"),
+    url("https://cdn.cloudflare.steamstatic.com/apps/dota2/fonts/radiance-semibold.ttf")
+      format("truetype"),
+    url("https://cdn.cloudflare.steamstatic.com/apps/dota2/fonts/radiance-semibold.svg#ywftsvg")
+      format("svg");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Reaver";
+  src: url("https://cdn.cloudflare.steamstatic.com/apps/dota2/fonts/Reaver-Light.woff2")
+      format("woff2"),
+    url("https://cdn.cloudflare.steamstatic.com/apps/dota2/fonts/Reaver-Light.woff")
+      format("woff"),
+    url("https://cdn.cloudflare.steamstatic.com/apps/dota2/fonts/Reaver-Light.ttf")
+      format("truetype");
+  font-weight: 200;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Reaver";
+  src: url("https://cdn.cloudflare.steamstatic.com/apps/dota2/fonts/Reaver-Regular.woff2")
+      format("woff2"),
+    url("https://cdn.cloudflare.steamstatic.com/apps/dota2/fonts/Reaver-Regular.woff")
+      format("woff"),
+    url("https://cdn.cloudflare.steamstatic.com/apps/dota2/fonts/Reaver-Regular.ttf")
+      format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Reaver";
+  src: url("https://cdn.cloudflare.steamstatic.com/apps/dota2/fonts/Reaver-SemiBold.woff2")
+      format("woff2"),
+    url("https://cdn.cloudflare.steamstatic.com/apps/dota2/fonts/Reaver-SemiBold.woff")
+      format("woff"),
+    url("https://cdn.cloudflare.steamstatic.com/apps/dota2/fonts/Reaver-SemiBold.ttf")
+      format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Reaver";
+  src: url("https://cdn.cloudflare.steamstatic.com/apps/dota2/fonts/Reaver-Bold.woff2")
+      format("woff2"),
+    url("https://cdn.cloudflare.steamstatic.com/apps/dota2/fonts/Reaver-Bold.woff")
+      format("woff"),
+    url("https://cdn.cloudflare.steamstatic.com/apps/dota2/fonts/Reaver-Bold.ttf")
+      format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Reaver";
+  src: url("https://cdn.cloudflare.steamstatic.com/apps/dota2/fonts/Reaver-Black.woff2")
+      format("woff2"),
+    url("https://cdn.cloudflare.steamstatic.com/apps/dota2/fonts/Reaver-Black.woff")
+      format("woff"),
+    url("https://cdn.cloudflare.steamstatic.com/apps/dota2/fonts/Reaver-Black.ttf")
+      format("truetype");
+  font-weight: 800;
+  font-style: normal;
+}
+
+body {
+  font-family: "Radiance", Verdana;
+}
+
+.DotaFont,
+.dotaFont {
+  font-family: "Radiance", Verdana;
+}
+
+.TitleFont,
+.titleFont {
+  font-family: "Reaver", Times, serif;
+}
+
+* {
+  font-family: "Radiance";
+  line-height: normal;
+}
+
+#navBarBGRepeat {
+  width: 100%;
+  height: 64px;
+  position: relative;
+  z-index: 10001;
+  background-image: url("https://cdn.cloudflare.steamstatic.com/apps/dota2/images/header/header_bg.png");
+  font-family: "Radiance";
+}
+
+#navBarBG {
+  width: 100%;
+  height: 64px;
+  text-align: center;
+}
+
+#navBar {
+  width: 950px;
+  height: 64px;
+  padding: 0;
+  margin: 0 auto;
+  text-align: left;
+  font-family: "Radiance";
+}
+
+#navBar .navBarItem {
+  position: relative;
+  display: inline-block;
+  line-height: 18px;
+}
+
+#navBar a.navBarItem {
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-size: 14px;
+  color: #cecece;
+}
+
+#navBar a.navBarItem:hover {
+  color: #ffffff;
+}
+
+#navBar img.dn_arrow {
+  position: relative;
+  width: 10px;
+  height: 6px;
+  border: 0;
+  top: -1px;
+}
+
+#navBar div.external_img {
+}
+
+a.navBarItem:link,
+a.navBarItem:active,
+a.navBarItem:visited {
+  text-decoration: none;
+  color: #908d8b;
+}
+
+a.navBarItem:hover {
+  color: #ffffff;
+}
+
+#navLoginAndLanguage {
+  position: absolute;
+  width: 750px;
+  text-align: right;
+  top: 22px;
+  padding-right: 10px;
+  font-size: 10px;
+  text-transform: uppercase;
+  color: #626263;
+  letter-spacing: 1px;
+  line-height: 18px;
+  font-family: "Radiance";
+}
+
+#navLoginAndLanguage a,
+#navLoginAndLanguage a:hover,
+#navLoginAndLanguage a:visited,
+#navLoginAndLanguage a:active {
+  color: #626263;
+  text-decoration: none;
+  font-size: 10px;
+  font-family: "Radiance";
+}
+
+#navLoginAndLanguage a:hover {
+  color: #ffffff;
+}
+
+#languageSelector {
+  display: inline-block;
+}
+
+#languageList {
+  padding: 3px 2px;
+  border: solid #777777 1px;
+  background-color: #333333;
+  text-align: left;
+  z-index: 999999;
+  position: absolute;
+  right: 10px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+  font-family: "Radiance";
+}
+
+#languageList a {
+  display: block;
+  padding: 3px 6px;
+}
+
+#languageList a:hover {
+  background-color: #555555;
+}
+
+#adminSelector {
+  position: absolute;
+  margin-left: 600px;
+  margin-top: 40px;
+}
+
+#adminList {
+  width: 130px;
+  padding: 3px 2px;
+  border: solid #777777 1px;
+  background-color: #333333;
+  text-align: left;
+  z-index: 100;
+  position: absolute;
+  right: 20px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+#adminList a {
+  display: block;
+  padding: 3px 6px;
+}
+
+#adminList a:hover {
+  background-color: #555555;
+}
+
+#supportSelector {
+  position: absolute;
+  margin-left: 670px;
+  margin-top: 40px;
+}
+
+#supportList {
+  padding: 3px 2px;
+  border: solid #777777 1px;
+  background-color: #333333;
+  text-align: left;
+  z-index: 100;
+  position: absolute;
+  right: 20px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+#supportList a {
+  display: block;
+  padding: 3px 6px;
+}
+
+#supportList a:hover {
+  background-color: #555555;
+}
+
+.menuSubItemList {
+  min-width: 200px;
+  padding: 3px 2px;
+  border: solid #555 1px;
+  background-color: #111;
+  text-align: left;
+  z-index: 999999;
+  position: absolute;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.menuSubItemList a {
+  display: block;
+  padding: 6px 8px;
+  color: #aaa !important;
+  font-size: small;
+  text-decoration: none;
+}
+
+.menuSubItemList a:hover {
+  color: white !important;
+  background-color: #555;
+  text-decoration: none;
+}
+
+.navItem {
+  height: 24px;
+  margin-top: 21px;
+  display: inline-block;
+}
+
+.navItem sup {
+  color: #a83b28;
+  font-size: 0.7em;
+  vertical-align: top;
+  position: relative;
+  top: -8px;
+}
+
+.navItemDotaLogo {
+  width: 180px;
+}
+
+.navItem .DotaLogo {
+  position: absolute;
+  margin-top: -21px;
+  top: 0;
+  opacity: 0.8;
+}
+
+.navItem .DotaLogo:hover {
+  opacity: 1;
+}
+
+@font-face {
+  font-family: "Radiance";
+  src: url("https://cdn.cloudflare.steamstatic.com/apps/dota2/fonts/radiance.eot");
+  src: url("https://cdn.cloudflare.steamstatic.com/apps/dota2/fonts/radiance.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://cdn.cloudflare.steamstatic.com/apps/dota2/fonts/radiance.woff")
+      format("woff"),
+    url("https://cdn.cloudflare.steamstatic.com/apps/dota2/fonts/radiance.ttf")
+      format("truetype"),
+    url("https://cdn.cloudflare.steamstatic.com/apps/dota2/fonts/radiance.svg#ywftsvg")
+      format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Radiance-Bold";
+  src: url("https://cdn.cloudflare.steamstatic.com/apps/dota2/fonts/radiance-bold.eot");
+  src: url("https://cdn.cloudflare.steamstatic.com/apps/dota2/fonts/radiance-bold.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://cdn.cloudflare.steamstatic.com/apps/dota2/fonts/radiance-bold.woff")
+      format("woff"),
+    url("https://cdn.cloudflare.steamstatic.com/apps/dota2/fonts/radiance-bold.ttf")
+      format("truetype"),
+    url("https://cdn.cloudflare.steamstatic.com/apps/dota2/fonts/radiance-bold.svg#ywftsvg")
+      format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Radiance-SemiBold";
+  src: url("https://cdn.cloudflare.steamstatic.com/apps/dota2/fonts/radiance-semibold.eot");
+  src: url("https://cdn.cloudflare.steamstatic.com/apps/dota2/fonts/radiance-semibold.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://cdn.cloudflare.steamstatic.com/apps/dota2/fonts/radiance-semibold.woff")
+      format("woff"),
+    url("https://cdn.cloudflare.steamstatic.com/apps/dota2/fonts/radiance-semibold.ttf")
+      format("truetype"),
+    url("https://cdn.cloudflare.steamstatic.com/apps/dota2/fonts/radiance-semibold.svg#ywftsvg")
+      format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "goudy_trajan_boldbold";
+  src: url("https://cdn.cloudflare.steamstatic.com/apps/dota2/fonts/goudytrajan-bold-pro-webfont.eot");
+  src: url("https://cdn.cloudflare.steamstatic.com/apps/dota2/fonts/goudytrajan-bold-pro-webfont.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://cdn.cloudflare.steamstatic.com/apps/dota2/fonts/goudytrajan-bold-pro-webfont.woff")
+      format("woff"),
+    url("https://cdn.cloudflare.steamstatic.com/apps/dota2/fonts/goudytrajan-bold-pro-webfont.ttf")
+      format("truetype"),
+    url("https://cdn.cloudflare.steamstatic.com/apps/dota2/fonts/goudytrajan-bold-pro-webfont.svg#goudy_trajan_boldbold")
+      format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "goudy_trajan_mediummedium";
+  src: url("https://cdn.cloudflare.steamstatic.com/apps/dota2/fonts/goudytrajan-medium-pro-webfont.eot");
+  src: url("https://cdn.cloudflare.steamstatic.com/apps/dota2/fonts/goudytrajan-medium-pro-webfont.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://cdn.cloudflare.steamstatic.com/apps/dota2/fonts/goudytrajan-medium-pro-webfont.woff")
+      format("woff"),
+    url("https://cdn.cloudflare.steamstatic.com/apps/dota2/fonts/goudytrajan-medium-pro-webfont.ttf")
+      format("truetype"),
+    url("https://cdn.cloudflare.steamstatic.com/apps/dota2/fonts/goudytrajan-medium-pro-webfont.svg#goudy_trajan_mediummedium")
+      format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "goudy_trajan_regularregular";
+  src: url("https://cdn.cloudflare.steamstatic.com/apps/dota2/fonts/goudytrajan-regular-pro-webfont.eot");
+  src: url("https://cdn.cloudflare.steamstatic.com/apps/dota2/fonts/goudytrajan-regular-pro-webfont.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://cdn.cloudflare.steamstatic.com/apps/dota2/fonts/goudytrajan-regular-pro-webfont.woff")
+      format("woff"),
+    url("https://cdn.cloudflare.steamstatic.com/apps/dota2/fonts/goudytrajan-regular-pro-webfont.ttf")
+      format("truetype"),
+    url("https://cdn.cloudflare.steamstatic.com/apps/dota2/fonts/goudytrajan-regular-pro-webfont.svg#goudy_trajan_regularregular")
+      format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+#mcgcflushresponse li .Language {
+  padding-right: 10px;
+}
+
+#mcgcflushresponse .Done {
+  color: rgb(100, 100, 100);
+}
+
+#mcgcflushresponse .Title {
+  padding-bottom: 10px;
+}
+
+#HeaderSeperator {
+  color: #4f4c49;
+  display: inline-block;
+  margin-right: 15px;
+  margin-left: 15px;
+}
+
+#HeaderAdminSeperator {
+  display: inline-block;
+  margin-right: 5px;
+  margin-left: 5px;
+  font-size: 12px;
+}
+
+#PlayForFreeButton {
+  display: block;
+  border-radius: 3px 3px 3px 3px;
+  -moz-border-radius: 3px 3px 3px 3px;
+  -webkit-border-radius: 3px 3px 3px 3px;
+  background-color: #111c26;
+  border: 1px solid #336391;
+  height: 38px;
+  width: 200px;
+  text-shadow: 2px 2px 5px #000000;
+  color: #4585c3;
+  margin-left: 10px;
+  text-align: center;
+  float: right;
+  margin-top: 13px;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 5px #000000;
+  -webkit-text-stroke: 0.2px;
+  text-stroke: 0.2px;
+  font-size: 15px;
+  padding-top: 8px;
+  text-stroke: 0.2px;
+  letter-spacing: 3px;
+  -o-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  -webkit-box-shadow: 0px 3px 12px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 3px 12px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 3px 12px 0px rgba(0, 0, 0, 0.75);
+  font-family: "Radiance";
+}
+
+#PlayForFreeButton:hover {
+  -webkit-transition: none;
+  -moz-transition: none;
+  -o-transition: none;
+  transition: none;
+  background-color: #263f56;
+  color: #5595d3;
+  border: 1px solid #3a73a3;
+  -o-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  -webkit-transition: none;
+  -moz-transition: none;
+  -o-transition: none;
+  transition: none;
+  background-color: #263f56;
+  color: #5595d3;
+  border: 1px solid #3a73a3;
+  -o-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  font-family: "Radiance";
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  left: 0;
+  top: 0;
+  font-size: 100%;
+}
+
+/* ROOT FONT STYLES */
+
+* {
+  font-family: "Radiance", "Microsoft Yahei", "STHeiti", system, sans-serif;
+  color: #ffffff;
+  line-height: 1.5;
+  margin: 0 auto;
+}
+
+/* TYPOGRAPHY */
+
+h1 {
+  font-size: 5rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.375rem;
+}
+
+h4 {
+  font-size: 1.125rem;
+}
+
+h5 {
+  font-size: 1rem;
+}
+
+h6 {
+  font-size: 0.875rem;
+}
+
+p {
+  font-size: 1.125rem;
+  font-weight: 200;
+  line-height: 1.8;
+}
+
+.font-light {
+  font-weight: 300;
+}
+
+.font-regular {
+  font-weight: 400;
+}
+
+.font-heavy {
+  font-weight: 700;
+}
+
+/* POSITIONING */
+
+.left {
+  text-align: left;
+}
+
+.right {
+  text-align: right;
+}
+
+.center {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.justify {
+  text-align: justify;
+}
+
+/* ==== GRID SYSTEM ==== */
+
+.container {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.row {
+  position: relative;
+  width: 100%;
+}
+
+.row [class^="col"] {
+  float: left;
+  margin: 0.5rem 2%;
+  min-height: 0.125rem;
+}
+
+.col-1,
+.col-2,
+.col-3,
+.col-4,
+.col-5,
+.col-6,
+.col-7,
+.col-8,
+.col-9,
+.col-10,
+.col-11,
+.col-12 {
+  width: 96%;
+}
+
+.col-1-sm {
+  width: 4.33%;
+}
+
+.col-2-sm {
+  width: 12.66%;
+}
+
+.col-3-sm {
+  width: 21%;
+}
+
+.col-4-sm {
+  width: 29.33%;
+}
+
+.col-5-sm {
+  width: 37.66%;
+}
+
+.col-6-sm {
+  width: 46%;
+}
+
+.col-7-sm {
+  width: 54.33%;
+}
+
+.col-8-sm {
+  width: 62.66%;
+}
+
+.col-9-sm {
+  width: 71%;
+}
+
+.col-10-sm {
+  width: 79.33%;
+}
+
+.col-11-sm {
+  width: 87.66%;
+}
+
+.col-12-sm {
+  width: 96%;
+}
+
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.hidden-sm {
+  display: none;
+}
+
+.relative {
+  position: relative;
+}
+
+@media only screen and (min-width: 33.75em) {
+  /* 540px */
+  .container {
+    width: 80%;
+  }
+}
+
+@media only screen and (min-width: 45em) {
+  /* 720px */
+  .col-1 {
+    width: 4.33%;
+  }
+
+  .col-2 {
+    width: 12.66%;
+  }
+
+  .col-3 {
+    width: 21%;
+  }
+
+  .col-4 {
+    width: 29.33%;
+  }
+
+  .col-5 {
+    width: 37.66%;
+  }
+
+  .col-6 {
+    width: 46%;
+  }
+
+  .col-7 {
+    width: 54.33%;
+  }
+
+  .col-8 {
+    width: 62.66%;
+  }
+
+  .col-9 {
+    width: 71%;
+  }
+
+  .col-10 {
+    width: 79.33%;
+  }
+
+  .col-11 {
+    width: 87.66%;
+  }
+
+  .col-12 {
+    width: 96%;
+  }
+
+  .hidden-sm {
+    display: block;
+  }
+}
+
+@media only screen and (min-width: 60em) {
+  /* 960px */
+  .container {
+    width: 75%;
+    max-width: 60rem;
+  }
+}
+
+.flickity-enabled {
+  position: relative;
+}
+
+.flickity-enabled:focus {
+  outline: none;
+}
+
+.flickity-viewport {
+  overflow: hidden;
+  position: relative;
+  height: 100%;
+}
+
+.flickity-slider {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+/* draggable */
+
+.flickity-enabled.is-draggable {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.flickity-enabled.is-draggable .flickity-viewport {
+  cursor: move;
+  cursor: -webkit-grab;
+  cursor: grab;
+}
+
+.flickity-enabled.is-draggable .flickity-viewport.is-pointer-down {
+  cursor: -webkit-grabbing;
+  cursor: grabbing;
+}
+
+/* ---- flickity-button ---- */
+
+.flickity-button {
+  position: absolute;
+  background: hsla(0, 0%, 100%, 0.75);
+  border: none;
+  color: #333;
+}
+
+.flickity-button:hover {
+  background: white;
+  cursor: pointer;
+}
+
+.flickity-button:focus {
+  outline: none;
+  box-shadow: 0 0 0 5px #19f;
+}
+
+.flickity-button:active {
+  opacity: 0.6;
+}
+
+.flickity-button:disabled {
+  opacity: 0.3;
+  cursor: auto;
+  /* prevent disabled button from capturing pointer up event. #716 */
+  pointer-events: none;
+}
+
+.flickity-button-icon {
+  fill: currentColor;
+}
+
+/* ---- previous/next buttons ---- */
+
+.flickity-prev-next-button {
+  top: 50%;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  /* vertically center */
+  transform: translateY(-50%);
+}
+
+.flickity-prev-next-button.previous {
+  left: 10px;
+}
+.flickity-prev-next-button.next {
+  right: 10px;
+}
+/* right to left */
+.flickity-rtl .flickity-prev-next-button.previous {
+  left: auto;
+  right: 10px;
+}
+.flickity-rtl .flickity-prev-next-button.next {
+  right: auto;
+  left: 10px;
+}
+
+.flickity-prev-next-button .flickity-button-icon {
+  position: absolute;
+  left: 20%;
+  top: 20%;
+  width: 60%;
+  height: 60%;
+}
+
+/* ---- page dots ---- */
+
+.flickity-page-dots {
+  position: absolute;
+  width: 100%;
+  bottom: -25px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-align: center;
+  line-height: 1;
+}
+
+.flickity-rtl .flickity-page-dots {
+  direction: rtl;
+}
+
+.flickity-page-dots .dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin: 0 8px;
+  background: #333;
+  border-radius: 50%;
+  opacity: 0.25;
+  cursor: pointer;
+}
+
+.flickity-page-dots .dot.is-selected {
+  opacity: 1;
+}
+
+
+.container {
+	/* border: 1px solid red; */
+	width: 100%;
+	max-width: 78rem;
+}
+
+.HiddenAnchor
+{
+	width: 1px;
+	height: 1px;
+}
+
+.ChangeDetailsExtended
+{
+	position: relative;
+	display: none;
+	width: 950px;
+	background-color: #0E0E0E;
+	border: 1px solid black;
+	margin-top: 0px;
+	margin-left: -20px;
+	padding: 15px;
+	padding-left: 20px;
+	color: #707070;
+}
+
+.ChangeDetailsEToggle
+{
+	display: block;
+	margin-top: 10px;
+	color: #CC867A;
+}
+
+	.ChangeDetailsEToggle.HideButton
+	{
+		margin-top: -5px;
+		margin-bottom: 15px;
+	}
+
+.ChangeDetailsPopup
+{
+	display: none;
+	position: absolute;
+	z-index: 100;
+	width: 910px;
+	background-color: #131313;
+	border: 1px solid black;
+	margin-top: 5px;
+	margin-left: -20px;
+	padding: 15px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	color: #707070;
+}
+
+.ChangeDetailsExtended .ChangeDetailsPopup
+{
+	margin-left: -5px;
+}
+
+#Heroes b, #Items b
+{
+	font-size: 18px;
+	padding-bottom: 4px;
+	margin-top: -10px;
+	display: block;
+	text-transform: uppercase;
+	font-weight: normal;
+	font-family: 'Radiance';
+	color: #E0E0E0;
+}
+
+#HeroesChanges.Loading
+{
+	visibility: hidden;
+}
+
+b span.Reworked
+{
+	padding-left: 5px;
+	color: #FF5307;
+}
+
+b span.New
+{
+	padding-left: 5px;
+	color: #36D15E;
+}
+
+b span.Scepter
+{
+	padding-left: 5px;
+	color: #00CCFF;
+}
+
+b span.Captains
+{
+	padding-left: 5px;
+	color: #36D15E;
+}
+
+body {
+	background-color: #020103;
+	font-family: 'Radiance', san-serif;
+	overflow-x: hidden;
+}
+
+.page-contain {
+	overflow-x: hidden;
+}
+
+
+.spacer-sm {
+	margin-top: 20px 0px;
+}
+
+.spacer-md {
+	margin-top: 50px 0px;
+}
+
+.spacer-lg {
+	margin-top: 100px 0px;
+}
+
+.spacer-xl {
+	margin-top: 150px 0px;
+}
+
+.spacer-xxl {
+	margin-top: 250px 0px;
+}
+
+.padding-sm {
+	padding: 20px 0px;
+}
+
+.padding-md {
+	padding: 50px 0px;
+}
+
+.padding-lg {
+	padding: 100px 0px;
+}
+
+.padding-xl {
+	padding: 150px 0px;
+}
+
+.padding-xxl {
+	padding: 250px 0px;
+}
+
+.padding-top-sm {
+	padding-top: 20px;
+}
+
+.padding-top-md {
+	padding-top: 50px;
+}
+
+.padding-top-lg {
+	padding-top: 100px;
+}
+
+.padding-top-xl {
+	padding-top: 150px;
+}
+
+.padding-top-xxl {
+	padding-top: 250px;
+}
+
+.padding-bottom-sm {
+	padding-bottom: 20px;
+}
+
+.padding-bottom-md {
+	padding-bottom: 50px;
+}
+
+.padding-bottom-lg {
+	padding-bottom: 100px;
+}
+
+.padding-bottom-xl {
+	padding-bottom: 150px;
+}
+
+.padding-bottom-xxl {
+	padding-bottom: 250px;
+}
+
+.spacer-bottom {
+	padding-bottom: 100px;
+}
+
+#navBarBGRepeat {
+	height: auto;
+	box-shadow: 0px 2px 10px #000000;
+}
+
+#MobileNav {
+	width: 100%;
+	background-color: #222222;
+	border-bottom: 1px solid #444444;
+	box-shadow: 2px 2px 15px #000000;
+	z-index: 1000;
+	display: none;
+	padding: 10px 20px 6px 20px;
+	min-height: 56px;
+}
+
+#MobileNavLogo {
+	margin: 0 auto;
+	float: left;
+	max-width: 120px;
+
+}
+
+#MobileNavLogo Image {
+	max-width: 100px;
+}
+
+.logo-mobile {
+	max-width: 150px;
+	padding-top: 3px;
+}
+
+#BackToDota {
+	font-size: 12px;
+	color: #999999;
+	float: right;
+	margin-top: 5px;
+	text-shadow: none;
+	text-decoration: underline;
+}
+
+#BacktoDota a:hover {
+	color: #999999; !important
+}
+
+
+@media only screen and (max-width: 900px) {
+	#navBarBGRepeat {
+		display: none;
+	}
+
+	#MobileNav {
+		display: block;
+	}
+}
+
+#GradientOverlayBottom {
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(60%, rgba(0, 0, 0, 0)), color-stop(80%, rgba(0, 0, 0, 0.7)), color-stop(100%, rgba(0, 0, 0, 1)));
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	position: absolute;
+	bottom: 0px;
+}
+
+#GradientOverlayTop {
+	background: -webkit-gradient(linear, left bottom, left top, color-stop(60%, rgba(0, 0, 0, 0)), color-stop(80%, rgba(0, 0, 0, 0.7)), color-stop(100%, rgba(0, 0, 0, 1)));
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	position: absolute;
+}
+
+#GradientOverlayRight {
+	background-image: linear-gradient(to left, rgba(0,0,0,1) , rgba(0,0,0,0.5) , rgba(0,0,0,0.3), rgba(0,0,0,0) , rgba(0,0,0,0));
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	position: absolute;
+	bottom: 0px;
+}
+
+.outer
+{
+	width: 100%;
+}
+
+.fullwidth {
+	width: 100%;
+}
+
+.header-video {
+
+	-webkit-mask-image: linear-gradient(to top, transparent 0%, black 10%);
+  	mask-image: linear-gradient(to top, transparent 0%,  black 100%);
+}
+
+@-moz-document url-prefix() { 
+	.header-video {
+
+		-webkit-mask-image: linear-gradient(to top, transparent 0%, black 10%);
+		mask-image: linear-gradient(to top, transparent 0%,  black 50%);
+	}
+  }
+
+#Hero {
+	background-image: url("https://cdn.cloudflare.steamstatic.com/apps/dota2/images/hoodwink/banner.jpg");
+	background-size: 100%;
+	background-position: top;
+	background-repeat: no-repeat;
+	width: 100%;
+	/* min-height: 130vh; */
+}
+
+.hoodwink-bg {
+	position: absolute;
+}
+
+.hoodwink {
+	margin-top: -100px;
+}
+
+.header-bg {
+	position: absolute;
+	top: 0;
+	left: 50%;
+	width: 100%;
+	transform: translateX(-50%) translateY(0%);
+	overflow-x: hidden;
+	z-index: -1;
+	animation: fade-in 0.4s ease-in-out;
+}
+
+.hero-bg {
+	/* height: 100vh; */
+	width: 100%;
+	position: relative;
+	overflow: hidden;
+}
+
+.heroes {
+	width: 100%;
+	/* height: 96vh; */
+	/* margin: 0 auto; */
+}
+
+.header {
+	position: relative;
+	height: 1080px;
+}
+
+.header-void {
+	position: absolute;
+	max-width: 1266px;
+	top: 180px;
+	left: -200px;
+	z-index: 2;
+}
+
+.header-snapfire {
+	position: absolute;
+	max-width: 940px;
+	/* top: 24px; */
+	/* right: 18%; */
+	z-index: 1;
+	right: 0;
+}
+
+
+
+.symbol {
+	padding: 0 32px;
+}
+
+.difficulty {
+	width: 12%;
+	margin-bottom: 10px;
+	opacity: 0.8;
+}
+
+.title-main {
+	max-width: 1000px;
+	width: 100%;
+	padding-top: 100px;
+}
+
+.header-text {
+	font-size: 42px;
+	font-weight: normal;
+	letter-spacing: 4px;
+	text-transform: uppercase;
+	text-align: center;
+	color:#ffffff;
+	text-shadow: 0 0 8px #95552d,
+				 0 1px 2px #00000090;
+	font-family: "Reaver", serif;
+	font-weight: 600;
+}
+
+.lore-text {
+	font-size: 26px;
+	letter-spacing: 3px;
+	color: #EFAFF0;
+	text-shadow: 0 0 6px #EFAFF0;
+	text-transform: uppercase;
+	font-family: "Reaver", serif;
+	text-align: center;
+	font-weight: 600;
+	/* padding-top: 124px; */
+	color: #abce28;
+	text-shadow: 0 0 6px #abce28;
+}
+
+#Lore {
+	z-index: 4;
+	position: relative;
+	padding-top: 80px;
+	padding-bottom: 100px;
+}
+
+
+
+#Lore {
+	/* top: -22vw; */
+	background-image: url("https://cdn.cloudflare.steamstatic.com/apps/dota2/images/hoodwink/acorns_bg.jpg");
+	background-size: cover;
+	background-position: center bottom;
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 100%;
+	border-top: 1px solid #95552d;
+	border-bottom: 1px solid #95552d;
+	box-shadow: inset -1px 0px 4px #EFAFF040,
+				0 0 48px #000;
+}
+
+
+
+
+.hero-hype {
+	font-size: 20px;
+	font-weight: 200;
+	line-height: 200%;
+	text-align: center;
+	padding-top: 48px;
+}
+
+.hero-lore-header {
+	font-size: 32px;
+	font-weight: normal;
+	letter-spacing: 4px;
+	text-transform: uppercase;
+	text-align: center;
+	color:#ffffff;
+	text-shadow: 0 0 8px #95552d,
+				 0 1px 2px #00000090;
+	font-family: "Reaver", serif;
+	font-weight: 600;
+	font-size: 26px;
+}
+
+.hero-lore {
+	font-size: 20px;
+	/* text-transform: uppercase;
+	letter-spacing: 4px; */
+	text-align: center;
+	font-family: "Reaver", serif;
+	font-weight: 400;
+	padding-top: 24px;
+	text-align: justify;
+	color: #ffffff;
+	text-shadow: 0 1px 5px #000000aa,
+	0 0 8px #000;
+}
+
+
+
+.site-nav {
+	width: 100%;
+	height: 68px;
+	margin-top: 100px;
+	background-image: url("https://cdn.cloudflare.steamstatic.com/apps/dota2/images/outlanders/nav_bg.png");
+	background-size: cover;
+	background-position: center;
+}
+
+.site-nav .row {
+	width: 70%;	
+}
+
+.site-nav li:hover {
+	color: #fff;
+}
+
+
+
+.void-spirit {
+	margin-top: -500px;
+}
+
+.hero-void {
+	width: 100%;
+	height: 100%;
+	position: relative;
+	z-index: 2;
+}
+
+#HeroIntro {
+	margin: 0 auto;
+	z-index: 10;
+
+}
+
+.hero-title {
+	max-width: 1160px;
+	z-index: 5;
+	position: relative;
+}
+
+#Attributes {
+	width: 50%;
+	padding-left: 0px;
+}
+
+.video {
+	background-size: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	width: 100%;
+	box-shadow: 0 24px 36px #00000060;
+}
+
+
+
+#Abilities {
+	max-width: 60%;
+	z-index: 2;
+	position: relative;
+	margin-bottom: 60px;
+}
+
+#Abilities li {
+	display: inline-block;
+	margin-bottom: 48px;
+}
+
+#Abilities img {
+	width: 140px;
+	height: 140px;
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+
+.ability-text {
+	padding-left: 24px;
+}
+
+.ability-desc {
+	font-size: 18px;
+	color: #c4c4c4;
+}
+
+.skill-title {
+	font-size: 26px;
+	text-transform: uppercase;
+	letter-spacing: 4px;
+}
+
+.skill-desc {
+	font-size: 17px;
+	line-height: 26px;
+	vertical-align: middle;
+}
+
+
+.gems {
+	width: 64%;
+	margin: auto;
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: -140px;
+	overflow: hidden;
+}
+
+#Hoodwink {
+
+}
+
+#Hoodwink  {
+	background-color: #000000;
+	background-image: url("https://cdn.cloudflare.steamstatic.com/apps/dota2/images/hoodwink/hoodwink_top_bg.jpg");
+	background-size: contain;
+	background-position: bottom;
+	background-repeat: no-repeat;
+	width: 100%;
+
+	z-index: 1;
+}
+
+/* #Hoodwink  {
+	background-image: url("https://cdn.cloudflare.steamstatic.com/apps/dota2/images/outlanders/snapfire/bottom_bg.png");
+	background-size: contain;
+	background-position: bottom;
+	background-repeat: no-repeat;
+	width: 100%;
+	min-height: 2608px;
+	position: absolute;
+	bottom: 0;
+	z-index: -1;
+} */
+
+#Hoodwink .top-half {
+	position: relative;
+	/* top: -24vw; */
+}
+
+#Hoodwink .bottom-half {
+	/* top: -16vw; */
+	position: relative;
+	z-index: 4;
+}
+
+.hero-hoodwink {
+	max-width: 1200px;
+	width: 100%;
+	position: relative;
+	z-index: 1;
+	opacity: 0;
+	margin-left: 15%;
+	margin-top: 100px;
+}
+
+#Hoodwink #Attributes {
+	width: 60%;
+}
+
+#Hoodwink #Attributes li {
+	display: inline-block;
+	padding-top: 12px;
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 4px;
+	font-family: "Reaver", serif;
+	font-size: 18px;
+	font-weight: black;
+	color: #ffffff;
+	text-shadow: 0 0 6px #abce28;
+}
+
+#Hoodwink .hero-hype {
+	color: #f1ffbd;
+	text-shadow: 0 0 4px #000000;
+}
+
+#Hoodwink #Video {
+	position: relative;
+	padding-top: 200px;
+	padding-bottom: 200px;
+	width: 100%;
+	margin-top: 100px;
+}
+
+#Hoodwink #video {
+	z-index: 5;
+}
+
+#Hoodwink #Abilities img {
+	box-shadow: 0px 0px 48px #EF6D4B60;
+}
+
+#Hoodwink .skill-title {
+	color: rgb(255, 217, 208);
+	text-shadow: 0 0 8px #EF6D4B;
+}
+
+#Hoodwink .skill-desc {
+	color: rgb(255, 217, 208, 0.7);
+}
+
+#AbilitiesVideos {
+	box-shadow: 0px 0px 20px #000000;
+	display: block;
+	position: relative;
+}
+
+.kitchen {
+	background-image: url("https://cdn.cloudflare.steamstatic.com/apps/dota2/images/outlanders/snapfire/kitchen.png");
+	background-size: contain;
+	background-position: bottom right;
+	background-repeat: no-repeat;
+	position: absolute;
+	right: -260px;
+	bottom: 0px;
+	width: 600px;
+	height: 600px;
+	visibility: visible;
+}
+
+.cactus {
+	background-image: url("https://cdn.cloudflare.steamstatic.com/apps/dota2/images/outlanders/snapfire/cactus.png");
+	background-size: contain;
+	background-position: top left;
+	background-repeat: no-repeat;
+	position: absolute;
+	left: -180px;
+	top: 30px;
+	width: 600px;
+	height: 100%;
+	z-index: -1;
+}
+
+.divider-top {
+	width: 100%;
+	height: 100px;
+	position: absolute;
+	top: 0px;
+	background-image: url('https://cdn.cloudflare.steamstatic.com/apps/dota2/images/hoodwink/divider-top.png');
+	background-position: center top;
+	background-repeat: repeat-x;
+	z-index: 10;
+}
+
+.divider-bottom {
+	width: 100%;
+	height: 100px;
+	position: absolute;
+	bottom: 0px;
+	background-image: url('https://cdn.cloudflare.steamstatic.com/apps/dota2/images/diretide2020/diretide_divider.png');
+	background-position: center bottom;
+	background-repeat: repeat-x;
+	z-index: 10;
+}
+
+.leaves-bottom {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	bottom: 0px;
+	background-image: url('https://cdn.cloudflare.steamstatic.com/apps/dota2/images/hoodwink/leaves_overlay.png');
+	background-position: left bottom;
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+	z-index: 1;
+	pointer-events: none;
+}
+
+.leaves-overlay {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	background-image: url('https://cdn.cloudflare.steamstatic.com/apps/dota2/images/hoodwink/video-overlay.png');
+	background-position: center top;
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+	z-index: 1;
+	pointer-events: none;
+}
+
+.shard-ui-video {
+	margin: 30px 0px;
+}
+
+
+
+#Wallpaper {
+	background-image: url("https://cdn.cloudflare.steamstatic.com/apps/dota2/images/hoodwink/wallpaper_bg.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	width: 100%;
+	min-height: 800px;
+	/* top: -680px; */
+	position: relative;
+	z-index: 5;
+}
+
+#Wallpaper .container {
+
+}
+
+#Wallpaper ul {
+	padding-inline-start: 0px;
+}
+
+.gallery img {
+	height: 100%;
+	border: 1px solid #95552d;
+	box-shadow: 0 0 24px #000000;
+	transition-duration: 0.2s;
+	z-index: 5;
+	position: relative;
+}
+
+.gallery img:hover {
+	filter: brightness(1.3);
+}
+
+.gallery a {
+	height: 100%;
+}
+
+.gallery li {
+	list-style-type: none;
+	display: inline;
+	margin: 0 12px;
+}
+
+.mistwoods-title {
+	ui-scale: 120%;
+}
+
+#PatchNotes {
+	background-image: url("https://cdn.cloudflare.steamstatic.com/apps/dota2/images/outlanders/patch-notes/bg_repeater.jpg");
+	background-size: 100%;
+	background-repeat: repeat;
+	width: 100%;
+	/* top: -790px; */
+	/* margin-top: -150px; */
+	position: relative;
+	padding-top: 50px;
+	border-top: 2px solid #7de5ff;
+}
+
+#PatchNotes .bg-top {
+	background-image: url("https://cdn.cloudflare.steamstatic.com/apps/dota2/images/hoodwink/patch_top.png");
+	background-size: 80%;
+	background-position: top;
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	opacity: 0.75;
+	top: 0;
+}
+
+#PatchNotes .container {
+	position: relative;
+}
+
+.patch-notes h1 {
+	font-size: 42px;
+	font-weight: normal;
+	text-transform: uppercase;
+	letter-spacing: 8px;
+	text-align: center;
+	color:#bee4ec;
+	text-shadow: 0 0 48px #3a78fc,
+				 0 2px 4px #00000090;
+}
+
+.patch-notes h3 {
+	font-size: 36px;
+	font-weight: normal;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	text-align: left;
+	color:#fff;
+	text-shadow: 0 0 12px #D84A0C80,
+				 0 2px 4px #00000090;
+	margin-bottom: 0px;
+	background: #D84A0C;
+	background: linear-gradient(90deg, #D84A0C90 0%, #D84A0C00 100%);
+	border-left: 2px solid rgba(255, 80, 5, 30);
+	padding-left: 24px;
+	padding-top: 6px;
+	font-family: "Reaver", serif;
+	font-weight: 600;
+}
+
+.patch-notes #Shards h3,
+.patch-notes #Shards h3,
+.patch-notes #Shards h3 {
+	margin-bottom: 0px;
+}
+
+.patch-notes h4 {
+	position: relative;
+	line-height: 26px;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	font-size: 20px;
+	font-weight: semi-bold;
+	color: #fff;
+}
+
+.patch-notes h5 {
+	position: relative;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	font-size: 20px;
+	font-weight: semi-bold;
+	margin: 20px 0px;
+	color: #fff;
+	padding-left: 10px;
+}
+
+
+.patch-notes ul {
+	list-style: none;
+	padding: 0px 20px 0px 10px;
+	display: block;
+	vertical-align: middle;
+}
+
+.patch-notes ul li:before { 
+	content:"•"; 
+	font-size:12pt; 
+	left: -16px;
+	top: -2px;
+	position: absolute;
+	opacity: 0.6;
+}
+
+.patch-notes p,
+.patch-notes li {
+	font-size: 18px;
+	line-height: 32px;
+	color: #999;
+	position: relative;
+}
+
+.patch-notes li {
+	margin-left: 24px;
+}
+
+.ChangeNoteImage {
+	display: inline-block;
+	margin-right: 20px;
+	box-shadow: 0px 0px 20px #000000;
+}
+
+.tab {
+	margin-left: 24px;
+}
+
+/* Hide Play button + controls on iOS */
+video::-webkit-media-controls {
+    display:none !important;
+}
+
+.general,
+.neutral,
+.items,
+.shards,
+.hero-changes {
+	background-size: contain;
+	background-position: bottom;
+	background-repeat: no-repeat;
+	width: 100%;
+}
+
+/* .general { background-image: url("https://cdn.cloudflare.steamstatic.com/apps/dota2/images/outlanders/patch-notes/general_header.png"); height: 800px;} */
+.neutral { background-image: url("https://cdn.cloudflare.steamstatic.com/apps/dota2/images/hoodwink/patch/neutrals_header.png"); height: 500px;}
+.items { background-image: url("https://cdn.cloudflare.steamstatic.com/apps/dota2/images/hoodwink/patch/patch_items.png"); height: 500px;}
+.shards { background-image: url("https://cdn.cloudflare.steamstatic.com/apps/dota2/images/hoodwink/patch/aghs_header.png"); height: 500px;}
+/* .hero-changes { background-image: url("https://cdn.cloudflare.steamstatic.com/apps/dota2/images/outlanders/patch-notes/heroes_header.png"); height: 700px;} */
+
+.ChangeDetailsExtended {
+	margin-top: 4px;
+}
+
+.ChangeDetailsExtended li
+{
+	margin-left: 36px;
+	padding-right: 24px;
+}
+
+.highlight
+ {
+	font-weight: bold;
+}
+
+ul.outpost-details {
+	padding-left: 0;
+}
+
+.outpost-details li {
+}
+
+.outpost-details p {
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+	line-height: 26px;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	font-size: 13px;
+	font-weight: bold;
+}
+
+.drop-rates {
+	padding-top: 24px;
+}
+
+.drop-rates li {
+	font-size: 16px;
+	opacity: 0.6;
+	line-height: 24px;
+	margin-left: 0;
+}
+
+.col-4.drop-rates {
+	margin-left: 0;
+}
+
+ul.drop-rates {
+	padding-left: 0;
+}
+
+#NeutralItems h5 {
+	margin-top: -8px;
+}
+
+#PatchNotes .time {
+	font-size: 21px;
+	text-transform: uppercase;
+	letter-spacing: 4px;
+	opacity: 1.0;
+	margin-bottom: 0px;
+}
+
+.drop-rates li:before {
+	display: none;
+}
+
+.patch-notes .tier-header {
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	background: linear-gradient(90deg, #5C5C5C 0%, rgba(191, 191, 191, 0.712644) 25%, rgba(196, 196, 196, 0) 90.16%);
+	padding: 8px 20px 5px 20px;
+	font-size: 20px;
+	font-weight: 600;
+	font-family: "Reaver", serif;
+	text-shadow: 2px 2px 0px #00000090;
+	
+	color: #ffffff;
+}
+
+.tier-1 .tier-header {
+	background: linear-gradient(90deg, #5C5C5C 0%, rgba(191, 191, 191, 0.712644) 25%, rgba(196, 196, 196, 0) 90.16%);
+}
+
+.tier-2 .tier-header {
+	background: linear-gradient(90deg, #387D27 0%, #5AAB46 25%, rgba(196, 196, 196, 0) 90.16%);
+}
+
+.tier-3 .tier-header {
+	background: linear-gradient(90deg, #4B61D8 0%, #7F93FC 25.91%, rgba(75, 97, 216, 0) 90.16%);
+}
+
+.tier-4 .tier-header {
+	background: linear-gradient(90deg, #854CE2 0%, #D57BFF 25.91%, rgba(133, 76, 226, 0) 90.16%);
+}
+
+.tier-5 .tier-header {
+	background: linear-gradient(90deg, #B88E22 0%, #FFE195 25.91%, rgba(184, 142, 34, 0) 90.16%);
+}
+
+.patch-notes .item-label {
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	background: #333333;
+	padding: 10px 10px 8px 10px;
+	font-size: 15px;
+	line-height: 15px;
+	font-weight: 600;
+	font-family: "Reaver", serif;
+	text-shadow: 2px 2px 0px #00000090;
+	display: inline-block;
+	margin-left: 17px;
+	margin: 40px 0px 20px 17px;
+	
+	color: #ffffff;
+}
+
+#Neutrals ul {
+	padding-left: 0;
+}
+
+.name-container {
+	display: inline-block;
+	
+}
+
+.name {
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-size: 18px;
+	color: #fff;
+	vertical-align: middle;
+	font-family: "Reaver", serif;
+	font-weight: 600;
+	display: inline-block;
+}
+
+#Items .name {
+	/* transform: translateY(-10px); */
+}
+
+.Scepter, .Reworked, .Captains, .NewAbility, .Recipe, .Removed, .New {
+	font-size: 12px;
+	border-radius: 2px;
+	display: block;
+	text-shadow: 0px 0px 5px #000000;
+	margin: 0px;
+}
+
+.Scepter {
+	color: #00CCFF;
+}
+
+.Reworked {
+	color: #FF5307;
+}
+
+.Captains,
+.NewAbility {
+	color: #36D15E;
+}
+
+.Recipe {
+	color: rgb(228, 173, 24);
+}
+
+.Removed {
+	color: #999999;
+}
+
+.New {
+	color: #8636d1;
+}
+
+.hero-row {
+	margin: 30px 0px;
+	background: linear-gradient(90deg, rgba(0, 0, 0, 0.38) 3.07%, rgba(6, 37, 65, 0.3) 88.06%);
+	box-shadow: 0px 0px 50px #000000;
+}
+
+.patch-row {
+	background: linear-gradient(91.97deg, rgba(0, 0, 0, 0.38) 3.07%, rgba(6, 37, 65, 0.3) 88.06%);
+	box-shadow: inset 2px 0px 0px #23394D;
+	padding: 30px;
+}
+
+.tier-1.patch-row {
+	box-shadow: inset 2px 0px 0px #8d8d8d;
+}
+
+.tier-2.patch-row {
+	box-shadow: inset 2px 0px 0px #92E47E;
+}
+
+.tier-3.patch-row {
+	box-shadow: inset 2px 0px 0px #7F93FC;
+}
+
+.tier-4.patch-row {
+	box-shadow: inset 2px 0px 0px #D57BFF;
+}
+
+.tier-5.patch-row {
+	box-shadow: inset 2px 0px 0px #FFE195;
+}
+
+.hero-row .name {
+	font-size: 24px;
+	margin-bottom: -10px;
+}
+
+.reworked-scepter {
+	color: #00CCFF;
+	font-weight: 600;
+
+}
+
+.new-ability {
+	color: #92E47E;
+	font-weight: 600;
+
+}
+
+
+.row-title {
+	padding: 20px;
+}
+
+.row-title > * {
+	vertical-align: middle;
+}
+
+.shard-row {
+	width: 100%;
+	background-color: #444444;
+	margin-top: 20px;
+	display: inline-flex;
+	flex-direction: row;
+	background-color: #00224150;
+}
+
+
+.shard-content {
+	width: 50%;
+	height: 100%;
+	margin: 0px;
+}
+
+.shard-ability-row > * {
+	vertical-align: middle;
+}
+
+.shard-label {
+	/* text-transform: uppercase; */
+	flex-direction: row;
+	padding: 10px 20px;
+	background-color: #ffffff10;
+}
+
+.shard-label > * {
+	vertical-align: middle;
+}
+
+.shard-icon {
+	width: 45px;
+	height: 32px;
+	background-size: contain;
+	background-image: url( 'https://cdn.cloudflare.steamstatic.com/apps/dota2/images/hoodwink/aghanims_shard.png' );
+	margin-right: 10px;
+	display: inline-block;
+	box-shadow: 0px 0px 10px #000000;
+}
+
+.shard-ui {
+	width: 100%;
+	height: 300px;
+	background-image: url( 'https://cdn.cloudflare.steamstatic.com/apps/dota2/images/hoodwink/shard-ui.gif' );
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+.shard-ability {
+	padding: 20px;
+}
+
+.shard-ability-label {
+	font-family: "Reaver", serif;
+	font-weight: 600;
+	font-size: 16px;
+	color: #C0D9FF;
+	font-weight: 600;
+	display: inline-block;
+	margin-top: 1px;
+}
+
+.patch-ability-name {
+	display: inline-block;
+	margin-right: 5px;
+	font-family: "Reaver", serif;
+	font-size: 17px;
+	letter-spacing: 2px;
+	font-weight: 600;
+	text-transform: uppercase;
+}
+
+.patch-ability-tag {
+	display: inline-block;
+	padding: 1px 5px;
+	background-color: #333;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-size: 12px;
+	font-weight: 600;
+	transform: translateY(-3px);
+	color: #ffffffaa;
+	border-radius: 2px;
+	margin-left: 5px;
+}
+
+.patch-ability-tag.upgrade {
+	background-color: #333333;
+}
+
+.patch-ability-tag.new {
+	background-color: #324A7F;
+}
+
+.patch-ability-desc {
+	font-size: 18px;
+	color: #ffffffaa;
+	
+}
+
+.shard-video {
+	width: 50%;
+	margin: 0px;
+	position: relative;
+}
+
+.shard-video-overlay {
+	width: 100%;
+	height: 100%;
+	background: -webkit-gradient(linear, right top, left bottom, color-stop(60%, rgba(0, 0, 0, 0)), color-stop(80%, rgba(0, 0, 0, 0.7)), color-stop(100%, rgba(0, 0, 0, 1)));
+	position: absolute;
+	z-index: 3;
+	pointer-events:none;
+	transition-duration: 0.3s;
+}
+
+.shard-video-label {
+	position: absolute;
+	bottom: 20px;
+	left: 20px;
+	width: 100%;
+	font-size: 18px;
+	font-weight: 600;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	z-index: 5;
+	transition-duration: 0.3s;
+	vertical-align: middle;
+}
+
+.shard-video-label > * {
+	vertical-align: middle;
+}
+
+.shard-video-play {
+	transform: translateY(1px);
+}
+
+.shard-video-icon {
+	width: 28px;
+	height: 28px;
+	background-image: url( 'https://cdn.cloudflare.steamstatic.com/apps/dota2/images/hoodwink/play_icn.png' );
+	background-size: contain;
+	margin-right: 8px;
+	float: left;
+}
+
+.shard-video:hover .shard-video-overlay,
+.shard-video:hover .shard-video-label {
+	opacity: 0;
+}
+
+@keyframes shard-hover {
+	0% {
+	  opacity: 1;
+	}
+	100% {
+	  opacity: 0;
+	}
+  }
+
+  .shard-video-label {
+	animation-name: shard-hover;
+	animation-duration: 1ms;
+	animation-fill-mode: forwards;
+	animation-play-state: paused;      
+  }
+  
+  .shard-video-overlay {
+	animation-name: shard-hover;
+	animation-duration: 1ms;
+	animation-fill-mode: forwards;
+	animation-play-state: paused;      
+  }
+  
+  .shard-video:active .shard-video-overlay,
+  .shard-video:focus .shard-video-overlay,
+  .shard-video:hover .shard-video-overlay {
+	animation-fill-mode: forwards;
+	animation-play-state: running;
+  }
+
+  .shard-video:active .shard-video-label,
+  .shard-video:focus .shard-video-label,
+  .shard-video:hover .shard-video-label {
+	animation-fill-mode: forwards;
+	animation-play-state: running;
+  }
+
+
+
+
+.patch-video {
+	width: 100%;
+	background-color: #111111;
+}
+
+@media only screen and (max-width: 750px) {
+.shard-row {
+	flex-direction: column;
+}
+	.shard-content, .shard-video {
+		width: 100%;
+	}
+}
+
+
+#Footer .Inner
+{
+	background-image: url( 'https://cdn.cloudflare.steamstatic.com/apps/dota2/images/700/footer.jpg' );
+	background-color: #000000;
+	height: 287px;
+	background-position: center;
+
+}
+
+.ability_info {
+	background-color: #030303;
+	margin-bottom: 80px;
+}
+
+.footer {
+	background-color: #000000;
+	width: 100%;
+	padding-top: 30px;
+	/* top: -780px; */
+	position: relative;
+	/* margin-bottom: -780px; */
+}
+
+#PageFooter {
+	width: 100%;
+	background-color: #000000;
+	padding: 30px 0px;
+
+}
+
+.footer-logo {
+	height: 30px;
+	width: auto;
+	margin: 0px 20px;
+}
+
+#footer-logo {
+	width: 100%;
+}
+
+.footer-line {
+	font-size: 13px;
+	line-height: 20px;
+	color: #666666;
+	margin-top: 10px;
+}
+
+
+  
+  .carousel-cell {
+	width: 100%;
+	height: 900px;
+	margin-right: 10px;
+	background: #000000;
+  }
+
+  @-moz-document url-prefix() { 
+	.carousel-cell {
+		height: 800px;
+	}
+
+	@media only screen and (max-width: 1200px) {
+		.carousel-cell {
+			height: 700px;
+		}
+	}
+
+  }
+
+  
+  .carousel-cell-image {
+	display: block;
+	width: 100%;
+	max-height: 90vh;
+	margin: 0 auto;
+	-webkit-mask-image: linear-gradient(to right, transparent 0%, black 20%, black 80%, transparent);
+  	/* mask-image: linear-gradient(to top, transparent 0%, black 100%); */
+	-webkit-transition: opacity 0.4s;
+			transition: opacity 0.4s;
+  }
+  
+  /* fade in lazy loaded image */
+  .carousel-cell-image.flickity-lazyloaded,
+  .carousel-cell-image.flickity-lazyerror {
+	opacity: 1;
+  }
+
+  .slide-container {
+	
+	background-color: #000000aa;
+	background-size: 100% 100%;
+	padding: 20px;
+	max-width: 600px;
+	border: 1px solid #ffffff40;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	display: flex;
+	flex-direction: row;
+	/* align-items: flex-start; */
+	z-index: 20;
+  }
+
+  .button {
+	display: inline-block;
+	filter: grayscale(80%);
+	z-index: 5;
+	position: relative;
+	box-shadow: 0px 0px 20px #000000;
+	margin: 0px 10px;
+  }
+  
+  .button:hover {
+	cursor: pointer;
+	filter: grayscale(0%);
+
+  }
+  
+  .button:focus,
+  .button:active {
+	background-color: white;
+  }
+
+  
+  .button.is-selected {
+	transform: scale(1.2);
+	filter: grayscale(0%);
+	z-index: 15;
+  }
+  
+  /* ---- button-group ---- */
+  
+  .button-group {
+	display: inline-block;
+	vertical-align: bottom;
+  }
+  
+  .button-group:after {
+	content: '';
+	display: block;
+	clear: both;
+  }
+  
+  .button-group .button {
+	float: left;
+	border-radius: 0;
+	border-right-width: 0;
+  }
+  
+  .button-group .button:first-child {
+  }
+  
+  .button-group .button:last-child {
+	border-right-width: 1px;
+  }
+  
+  /* ---- button-row ---- */
+  
+  .button-row {
+	text-align: center;
+	padding: 20px;
+	/* transform: translateY(-120px); */
+	position: absolute;
+	bottom: 0px;
+	left: 50%;
+	width: 100%;
+	transform: translateX(-50%);
+  }
+
+  .pagination-icon {
+	  width: 70px;
+  }
+
+  @media only screen and (max-width: 1200px) {
+	/* #Hoodwink #Attributes li {
+		font-size: 12px;
+	} */
+}
+
+ @media only screen and (max-width: 1000px) {
+	.slide-container {
+		position: relative;
+		width: 100%;
+		bottom: 0px;
+		right: 0px;
+		border: solid 0px #000000;
+	}
+
+	.button-row {
+		bottom: 25%;
+	}
+
+	.pagination-icon {
+		width: 50px;
+	}
+  
+
+
+ }
+
+
+
+ 
+ @media only screen and (max-width: 800px) {
+
+
+	.button-row {
+		bottom: 35%;
+		position: relative;
+		
+	}
+
+
+ }
+
+  .slide-ability-icon {
+	  object-fit: contain;
+	  margin-right: 20px;
+	  width: 25%;
+	  max-width: 200px;
+  }
+
+  .ability-name {
+	  font-family: "Reaver", serif;
+	  font-weight: 600;
+	  font-size: 20px;
+	  text-transform: uppercase;
+	  letter-spacing: 2px;
+	  text-shadow: 2px 2px 0px #00000090;
+  }
+
+  .flickity-page-dots {
+	  bottom: 30px;
+  }
+
+  .flickity-button {
+	  background-color: #00000090;
+  }
+
+  .flickity-button:hover {
+	background-color: #000000;
+  }
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+/* @media only screen and (min-width: 160rem) {
+
+	.intro {
+		top: 50vh;
+	}
+} */
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+/* @media only screen and (min-width: 215rem) {
+
+
+/* Extra small devices (phones, 600px and down) */
+ @media only screen and (max-width: 38rem) {
+	.header {
+		height: 700px;
+	}
+
+	#Hoodwink  {
+		background-size: auto 50%;
+
+	}
+
+	#Lore {
+		background-image: url("https://cdn.cloudflare.steamstatic.com/apps/dota2/images/hoodwink/acorns_mobile_bg.jpg");
+		padding: 50px 20px;
+	}
+
+	.fullwidth.header-video {
+		height: 500px;
+		width: auto;
+		margin-left: 50%;
+		transform: translateX(-50%);
+	}
+	
+	.header-void {
+		max-width: 666px;
+		top: 0;
+	}
+
+	.header-snapfire {
+		max-width: 410px;
+		right: -50px;
+	}
+
+	.lore-text {
+		font-size: 18px;
+		line-height: 24px;
+	}
+
+	.hero-void {
+		width: 200%;
+		transform: translateX(-25%);
+	}
+	
+	.void-spirit {
+		margin-top: 200px;
+	}
+
+	.difficulty {
+		width: 30%;
+		margin-top: 10px;
+	}
+
+	.hero-hype {
+		padding-top: 8px;
+	}
+
+	.void-small,
+	.kitchen {
+		visibility: hidden;
+	}
+	
+	#VoidSpirit #Video,
+	#Hoodwink #Video {
+		padding-top: 100px;
+		padding-bottom: 100px;
+		margin-top: 0px;
+	}
+
+	#Abilities {
+		max-width: 100%;
+	}
+
+	.ability-text {
+		padding-left: 0;
+	}
+
+	.hero-hoodwink {
+		width: 200%;
+		transform: translateX(-50%);
+		margin-top: 100px;
+	}
+
+	.hoodwink {
+		/* margin-top: 350px; */
+	}
+
+	#Hoodwink #Lore {
+		background-size: cover;
+		background-position: center;
+	}
+
+	.cactus {
+		top: -70px;
+	}
+
+	.gallery img {
+		margin-bottom: 12px;
+	}
+
+	.patch-notes {
+		margin-top: 40px;
+	}
+
+	.patch-notes h1 {
+		font-size: 34px;
+		line-height: 35px;
+	}
+
+	.general {
+		height: 0px;
+	}
+
+	.shards {
+		height: 200px;
+	}
+
+	.neutral {
+		height: 250px;
+	}
+
+	.items {
+		height: 200px;
+	}
+
+	.hero-changes {
+		height: 0px;
+	}
+
+	.leaves-overlay {
+		display: none;
+	}
+
+	.patch-notes h3 {
+		font-size: 24px;
+	}
+
+	
+
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 38rem) {
+	.shard-video-overlay, .shard-video-label {
+		display: none;
+	}
+
+	.leaves-overlay {
+		display: none;
+	}
+
+
+	
+}
+
+@media only screen and (max-width: 850px) {
+	.shard-video-overlay, .shard-video-label {
+		display: none;
+	}
+
+	.leaves-overlay {
+		display: none;
+	}
+
+	.slide-container {
+		max-width: 600px;
+		padding: 20px 20px 20px 40px;
+	}
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 48rem) {
+	.ability-text {
+		padding-left: 0;
+	}
+
+	.gallery img {
+		width: 30%;
+	}
+
+}
+
+.ChangeDetails {
+    display: inline;
+    position: relative;
+}
+
+.ChangeDetails:hover:after {
+    position: absolute;
+    z-index: 100;
+    width: 550px;
+    background-color: #131313;
+    border: 1px solid black;
+    margin-top: 5px;
+    margin-left: -20px;
+    padding: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #828282;
+    content: attr(title);
+    top: 100%;
+}
+
+.ChangeDetails:hover:before {
+    bottom: 20px;
+    content: "";
+    left: 50%;
+    position: absolute;
+    z-index: 99;
+}
+
+
+.info-active {
+	color: #5aab46;
+	font-weight: 600;
+
+}
+
+.info-passive {
+	color:#D57BFF;
+	font-weight: 600;
+
+}
